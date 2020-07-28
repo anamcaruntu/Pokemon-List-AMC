@@ -6,6 +6,7 @@ class PokemonList extends React.Component {
   render() {
     return (
       <div>
+        Hola mundo
         <Pokemon />
       </div>
     );
