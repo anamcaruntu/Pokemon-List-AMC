@@ -17,7 +17,7 @@ class PokemonList extends React.Component {
       );
     });
     return (
-      <ul>
+      <ul className="pokemonList">
         <li>{result}</li>
       </ul>
     );

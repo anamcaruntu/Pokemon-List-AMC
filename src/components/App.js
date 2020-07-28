@@ -9,8 +9,8 @@ class App extends React.Component {
   render() {
     console.log(Pokemons);
     return (
-      <div>
-        <h1>Mi lista de Pokemons</h1>
+      <div className="App">
+        <h1 className="App__title">Mi lista de Pokemons</h1>
         <PokemonList Pokemons={Pokemons} />
       </div>
     );
