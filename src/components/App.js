@@ -1,12 +1,12 @@
-import React from 'react';
-import ComponenteMadre from './ComponenteMadre';
-import '../stylesheets/App.scss';
+import React from "react";
+import PokemonList from "./PokemonList";
+import "../stylesheets/App.scss";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <ComponenteMadre />
+        <PokemonList />
       </div>
     );
   }
