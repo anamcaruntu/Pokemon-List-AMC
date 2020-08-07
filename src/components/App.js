@@ -1,17 +1,21 @@
 import React from "react";
-
-import PokemonList from "./PokemonList";
-import Pokemons from "../Data/Pokemons.json";
-
 import "../stylesheets/App.scss";
+import pokemons from "../Data/pokemons.json";
+import PokemonList from "./PokemonList";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: pokemons,
+    };
+  }
+
   render() {
-    console.log(Pokemons);
     return (
       <div className="App">
         <h1 className="App__title">Mi lista de Pokemons</h1>
-        <PokemonList Pokemons={Pokemons} />
+        <PokemonList data={this.state.data} />
       </div>
     );
   }

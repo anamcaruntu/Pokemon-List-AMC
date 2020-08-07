@@ -1,3 +1,63 @@
-* {
-  list-style: none;
+@import "./variables.scss";
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: $color-background;
+
+  &__title {
+    margin-top: 0px;
+    color: $color-white;
+    font-weight: 500;
+  }
+}
+
+.pokemonList {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  width: 200px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 10px 0;
+  background-color: $color-white;
+  border: 1px solid darkgrey;
+  &__img {
+    width: 100px;
+    margin: auto;
+  }
+
+  &__title {
+    padding: 20px 0;
+    color: $color-main;
+    text-transform: capitalize;
+  }
+
+  &__types {
+    height: 40px;
+
+    li {
+      display: inline-block;
+      line-height: 30px;
+      padding: 0 15px;
+      border-radius: 10px;
+      margin: 0 5px;
+      background-color: lightgrey;
+      color: $color-main;
+    }
+  }
 }
