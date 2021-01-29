@@ -1,6 +1,6 @@
 import React from "react";
 import "../stylesheets/App.scss";
-import pokemons from "../Data/pokemons.json";
+import pokemons from "../Data/Pokemons.json";
 import PokemonList from "./PokemonList";
 
 class App extends React.Component {
